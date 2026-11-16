@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoice Hub — обработка счетов</title>
+  <meta name="description" content="Invoice Hub помогает учитывать счета и чеки для оплаты в Telegram.">
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #172231; background: #f5f7fa; }
+    body { margin: 0; }
+    main { max-width: 760px; margin: 64px auto; padding: 0 24px; }
+    .card { background: white; border: 1px solid #e0e6ed; border-radius: 18px; padding: 32px; box-shadow: 0 8px 28px rgba(18,35,55,.05); }
+    h1 { font-size: 2.3rem; margin: 0 0 12px; }
+    h2 { font-size: 1.3rem; margin-top: 30px; }
+    p, li { line-height: 1.6; }
+    .eyebrow { color: #2667a9; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 32px; }
+    a { color: #145c9d; }
+    footer { color: #667487; margin: 22px 0; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="eyebrow">Invoice Hub</div>
+      <h1>Учёт счетов и чеков</h1>
+      <p>Invoice Hub — внутренний Telegram-бот для приёма счетов на оплату, отслеживания их статуса и сбора чеков после оплаты.</p>
+      <h2>Как это работает</h2>
+      <ul>
+        <li>Участник отправляет счёт боту в Telegram. Бот извлекает из документа номер, дату, услуги и сумму.</li>
+        <li>Ответственный выбирает дату оплаты и статью бюджета. Бот сохраняет документ в Google Диске и данные заявки в Google Таблице.</li>
+        <li>После оплаты бот запрашивает чек, сопоставляет его со счётом и добавляет ссылку в соответствующую запись.</li>
+      </ul>
+      <p>Доступ к боту и рабочим данным ограничен участниками соответствующих Telegram-чатов и владельцем подключённого Google-аккаунта.</p>
+      <nav aria-label="Документы">
+        <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="terms.html">Условия использования</a>
+        <a href="mailto:dolot920@gmail.com">Связаться с владельцем</a>
+      </nav>
+    </div>
+    <footer>Invoice Hub · Контакт: dolot920@gmail.com</footer>
+  </main>
+</body>
+</html>
+
